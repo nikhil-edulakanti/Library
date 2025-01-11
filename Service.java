@@ -20,12 +20,15 @@ class Service {
         System.out.println("Please enter your details here!");
         System.out.println("UserName: ");
         String name = sc.nextLine();
-        System.out.println("User ID: ");
-        int id = sc.nextInt();
         System.out.println("User Dept: ");
         String dept = sc.nextLine();
+        System.out.println("User ID: ");
+        int id = sc.nextInt();
+        sc.nextLine();
+        
 
         Users libUsers = new Users(name, id, dept);
+        System.out.println(libUsers.getUserID() + " " + libUsers.getUserName() + " " +libUsers.getUserDept());
 
         System.out.println("Please enter the book details");
         System.out.println("Title");
